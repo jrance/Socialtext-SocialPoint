@@ -1,9 +1,7 @@
 SocialPoint
 ========
 
-SocialPoint is a .NET library which allows you to call and work with the Socialtext REST APIs though .NET code. SocialPoint was specifically 
-
-designed and developed to work within SharePoint but because it is written using the .NET framework 3.0, it can be used within any .NET project.
+SocialPoint is a .NET library which allows you to call and work with the Socialtext REST APIs though .NET code. SocialPoint was specifically designed and developed to work within SharePoint but because it is written using the .NET framework 3.0, it can be used within any .NET project.
 
 This project contains the core library and a sample application that demonstrates how to call the Socialtext REST APIs. The core library (Socialtext.SocialPoint.Common) contains all the logic necessary to execute HTTP Web Requests against any of the REST APIs within Socialtext. Simply call the Execute method and pass through any of the REST API URLs defined in the [Socialtext documentation][1]. 
 
@@ -12,14 +10,13 @@ This project contains the core library and a sample application that demonstrate
 Installation
 ------------------
 
-The SocialPoint project consists of a standard C# class library and a sample ASP.NET web application. The class library is strongly named and 
-
-can be placed in the GAC if the library if intended to be used in multiple applications or within SharePoint. 
+The SocialPoint project consists of a standard C# class library and a sample ASP.NET web application. The class library is strongly named and can be placed in the GAC if the library if intended to be used in multiple applications or within SharePoint. 
 
 
 Examples
 -----------
 **Code Sample:**
+
 The following code snippet demonstrates a simple GET request for a Socialtext User object using .NET:
 
 
@@ -80,9 +77,8 @@ The following code snippet demonstrates a simple GET request for a Socialtext Gr
 
 The following code snippet demonstrates a simple POST request to send a Socialtext Signal using .NET:
 
-string socialtex
 
-    tServerUrl = "http://socialtext.company.com"; // Server URL of the Socialtext server
+    string socialtextServerUrl = "http://socialtext.company.com"; // Server URL of the Socialtext server
     string impersonatorUserId = "userid"; // User ID of the configured impersonator
     string impersonatorPassword = "password"; // Password of the configured impersonator
     string groupId = "21"; // ID of the group to send the signal to
@@ -117,9 +113,7 @@ string socialtex
 
 **Code Sample:**
 
-The following code snippet demonstrates serializing a Socialtext REST response of a User object into a .NET object using .NET 3.5 JSON 
-
-runtime.
+The following code snippet demonstrates serializing a Socialtext REST response of a User object into a .NET object using .NET 3.5 JSON runtime.
 
 
     **User Class**
